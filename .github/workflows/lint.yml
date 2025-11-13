@@ -1,4 +1,4 @@
-name: Code Quality Check
+name: Lint & Code Style Check
 
 on:
   push:
@@ -11,37 +11,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      #  Клонирование репозитория
+      # 1️⃣ Клонируем репозиторий
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      #  Установка Python
+      # 2️⃣ Устанавливаем Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      #  Установка зависимостей
+      # 3️⃣ Устанавливаем зависимости для линтинга
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install black isort flake8 flake8-bugbear flake8-builtins pep8-naming flake8-comprehensions
+          pip install flake8 flake8-bugbear flake8-builtins pep8-naming flake8-comprehensions black isort
 
-      #  Проверка стиля импорта
-      - name: Run isort (check mode)
+      # 4️⃣ Проверка импорта isort
+      - name: Run isort check
         run: |
           isort . --check-only --profile black --line-length 120
 
-      #  Проверка форматирования black
-      - name: Run black (check mode)
+      # 5️⃣ Проверка форматирования black
+      - name: Run black check
         run: |
           black . --check --line-length 120
 
-      #  Проверка стиля flake8
+      # 6️⃣ Проверка качества кода flake8 (строгий режим)
       - name: Run flake8
         run: |
+          echo "🔍 Running flake8..."
           flake8 . \
             --max-line-length=120 \
             --extend-ignore=E203,W503 \
-            --select=B,B9,N,F,E,W
+            --select=B,B9,N,F,E,W \
+            --show-source \
+            --statistics
 
