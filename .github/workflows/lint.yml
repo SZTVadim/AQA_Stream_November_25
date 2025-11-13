@@ -27,7 +27,8 @@ jobs:
             flake8-bugbear \
             flake8-builtins \
             flake8-comprehensions \
-            flake8-unused-imports \
+            flake8-eradicate \
+            flake8-debugger \
             pep8-naming \
             black \
             isort
