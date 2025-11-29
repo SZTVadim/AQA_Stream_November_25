@@ -57,6 +57,7 @@ print(bool('1'))  # gherfier hf iuweh
 
 if 5 > 3:
     print('Круто')
+    print("Python")
 
 
 def methon():
