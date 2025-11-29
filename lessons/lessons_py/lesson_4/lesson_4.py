@@ -53,8 +53,9 @@ a = [1, 2, 3, 4, 5]
 
 # print(3 and 6 in a)
 # print(7 in a or 6 in a)
-print(bool('1'))  # gherfier hf iuweh
 
+# Проверка: непустая строка -> True
+print(bool("1"))
 if 5 > 3:
     print('Круто')
     print("Python")
@@ -62,12 +63,12 @@ if 5 > 3:
 
 def methon():
     """
-        wef wef e
-        wef we f
-        wef wef we
-        fwe fwef
-        wef ghjhghjghghjghjghjghj g uygfjut ftyj fytf ytujf tuygf ug
-        ugf kuguhkghugkig ihg lih ih ihg ukyg ulig ilh li gljgli hghgvkuyg
-        ihbvhguyugffgufghghgjvgjgjjhjg
-        glgyilgfyigyigiygf fukyfkufukyf
+    wef wef e
+    wef we f
+    wef wef we
+    fwe fwef
+    wef ghjhghjghghjghjghjghj g uygfjut ftyj fytf ytujf tuygf ug
+    ugf kuguhkghugkig ihg lih ih ihg ukyg ulig ilh li gljgli hghgvkuyg
+    ihbvhguyugffgufghghgjvgjgjjhjg
+    glgyilgfyigyigiygf fukyfkufukyf
     """
