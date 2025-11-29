@@ -63,12 +63,5 @@ if 5 > 3:
 
 def methon():
     """
-    wef wef e
-    wef we f
-    wef wef we
-    fwe fwef
-    wef ghjhghjghghjghjghjghj g uygfjut ftyj fytf ytujf tuygf ug
-    ugf kuguhkghugkig ihg lih ih ihg ukyg ulig ilh li gljgli hghgvkuyg
-    ihbvhguyugffgufghghgjvgjgjjhjg
-    glgyilgfyigyigiygf fukyfkufukyf
+    пример многострочного комментария
     """
