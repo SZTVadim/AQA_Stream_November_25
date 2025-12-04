@@ -17,8 +17,8 @@ text = "Python"
 reversed_text = text[::-1]
 print(reversed_text)
 
-any = "He said \nHello"
-print(any)
+any_string = "He said \nHello"
+print(any_string)
 #
 # class Work:
 #     """"Классы мы с Вами узнаем в будущем
