@@ -33,8 +33,7 @@ print(my_list)
 print(id(my_list))
 list_fruit = ["apple", "banana", "cherry"]
 my_list.extend(list_fruit)
-my_list.insert(3,'potato')
-
+my_list.insert(3, 'potato')
 
 print(my_list)
 
