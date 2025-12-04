@@ -8,7 +8,7 @@ age_str = "25.5"
 print(float(age_str))
 print(type(float(age_str)))
 
-any_text = 'Abrakadabra'
+any_text = "Abrakadabra"
 print(any_text[0])
 print(any_text[-1])
 print(any_text[-2])
@@ -33,7 +33,7 @@ print(my_list)
 print(id(my_list))
 list_fruit = ["apple", "banana", "cherry"]
 my_list.extend(list_fruit)
-my_list.insert(3, 'potato')
+my_list.insert(3, "potato")
 
 print(my_list)
 
@@ -49,7 +49,7 @@ print(my_list)
 element = my_list.pop(-2)
 print(element)
 print(my_list)
-my_list.append('cherry')
+my_list.append("cherry")
 print(my_list)
 
 print(my_list.index(3))

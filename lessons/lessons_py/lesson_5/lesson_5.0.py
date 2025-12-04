@@ -30,11 +30,11 @@ req_url = f"{BASE_URL}/{new_user_for_endpoin}"
 print(req_url)
 
 text = "appl:banana:orange"
-fruits = text.split(':')
+fruits = text.split(":")
 print(type(fruits))
 print(fruits)
 print(fruits[0])
-new_text = ':'.join(fruits)
+new_text = ":".join(fruits)
 print(new_text)
 print(type(new_text))
 
