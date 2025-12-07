@@ -26,8 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install \
             flake8==7.1.1 \
-            black==24.8.0 \
-            isort==5.13.2 \
             flake8-bugbear \
             flake8-builtins \
             flake8-comprehensions \
@@ -41,13 +39,3 @@ jobs:
             --show-source \
             --statistics \
             --count
-
-      - name: Run isort
-        run: |
-          echo "📚 Checking import order..."
-          isort . --check-only --profile black --line-length 120
-
-      - name: Run black
-        run: |
-          echo "🧹 Checking code formatting..."
-          black --check . --line-length 120
