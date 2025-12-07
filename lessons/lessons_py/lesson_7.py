@@ -45,7 +45,7 @@ print(squares_2)
 squares_3 = [x**2 for x in range(5)]
 print(squares_3)
 
-list_for_work = [x for x in range(10)]
+list_for_work = [x**3 for x in range(10)]
 print(list_for_work)
 
 test_ids = [f"user_{i}" for i in range(10)]
