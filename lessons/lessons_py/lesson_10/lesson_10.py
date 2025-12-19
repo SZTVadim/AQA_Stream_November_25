@@ -29,7 +29,7 @@ fruits_2 = {"яблоко", "банан", "вишня"}
 fruits.update(fruits_2)
 print(f" ID до преобразования {id(fruits)}")
 print(sorted(fruits, reverse=True))
-print(sorted(list(fruits)))
+# print(sorted(list(fruits)))
 
 # Удаление элементов
 fruits = {"яблоко", "банан", "апельсин", "мандарин", "клубника"}
