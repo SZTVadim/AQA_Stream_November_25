@@ -54,12 +54,15 @@ check_adult(17)
 check_adult(18)
 check_adult(99)
 
+
 def check_temperature(temperature):
     if temperature < 0:
         print("Мороз")
     elif temperature < 20:
         print("Прохладно")
-    else: print("Жарко")
+    else:
+        print("Жарко")
+
 
 check_temperature(10)
 check_temperature(30)
