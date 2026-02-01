@@ -72,7 +72,7 @@ def setup_teardown():  # setup это предусловие
     id_animal = response_post.json()["id"]
     yield id_animal
     response_delete = requests.delete(f"https://petstore.swagger.io/v2/pet/{id_animal}",
-                                      headers=headers_for_get)  # teardown это предусловие
+                                      headers=headers_for_get)  # teardown это постусловие
     print(f"{response_delete.status_code}, успешно удален")
 
 
