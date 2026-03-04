@@ -4,4 +4,3 @@
 
 урл сайта https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 картинка в файле homework_24.png
-
