@@ -1,11 +1,10 @@
 import allure
-from playwright.sync_api import Page
 
-from lessons.lessons_py.lesson_27.UI_project.pages.base_page import BasePage
+from lessons.lessons_py.test_lesson_27.UI_project.pages.base_page import BasePage
 
 
 class AuthPage(BasePage):
-    AUTH_URL = "/auth/login"
+    page_url = "/auth/login"
 
     # селекторы
     _header_selector = ".orangehrm-login-title"
@@ -16,19 +15,19 @@ class AuthPage(BasePage):
 
     # локаторы
     def header_locator(self):
-        return self.page.locator(self._header_selector)
+        return self.element(self._header_selector)
 
     def login_locator(self):
-        return self.page.locator(self._login_selector)
+        return self.element(self._login_selector)
 
     def password_locator(self):
-        return self.page.locator(self._password_selector)
+        return self.element(self._password_selector)
 
     def submit_locator(self):
-        return self.page.locator(self._submit_selector)
+        return self.element(self._submit_selector)
 
     def forgot_password_locator(self):
-        return self.page.locator(self._forgot_password_selector)
+        return self.element(self._forgot_password_selector)
 
     # методы
     @allure.step("Ввести логин")
